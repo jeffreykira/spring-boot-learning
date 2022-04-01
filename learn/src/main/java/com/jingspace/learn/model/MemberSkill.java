@@ -12,7 +12,7 @@ public class MemberSkill {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberSkillId;
+    private Long id;
     @ManyToOne
     @JoinColumn(name = "mid")
     private Member member;
@@ -21,11 +21,11 @@ public class MemberSkill {
     private Skill skill;
 
     public Long getId() {
-        return memberSkillId;
+        return id;
     }
 
-    public void setId(Long memberSkillId) {
-        this.memberSkillId = memberSkillId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Member getMember() {

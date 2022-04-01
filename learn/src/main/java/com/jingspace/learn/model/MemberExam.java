@@ -14,7 +14,7 @@ public class MemberExam {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberExamId;
+    private Long id;
     @ManyToOne
     @JoinColumn(name = "mid")
     private Member member;
@@ -26,12 +26,12 @@ public class MemberExam {
     public MemberExam() {
     }
 
-    public Long getMemberExamId() {
-        return memberExamId;
+    public Long getId() {
+        return id;
     }
 
-    public void setMemberExamId(Long memberExamId) {
-        this.memberExamId = memberExamId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Member getMember() {
