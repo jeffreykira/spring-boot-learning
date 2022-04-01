@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ExamInfoRepostory extends JpaRepository<ExamInfo, Long> {
-    
+public interface ExamInfoRepository extends JpaRepository<ExamInfo, Long> {
+
 }

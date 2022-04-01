@@ -12,7 +12,7 @@ public class Certificate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long certificateId;
+    private Long id;
     private String name;
     @ManyToOne
     @JoinColumn(name = "skillId")
@@ -24,12 +24,12 @@ public class Certificate {
     public Certificate() {
     }
 
-    public Long getCertificateId() {
-        return certificateId;
+    public Long getId() {
+        return id;
     }
 
-    public void setCertificateId(Long certificateId) {
-        this.certificateId = certificateId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {

@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Member {
 
     @Id
-    private String mid;
+    private String id;
     private String email;
     private String password;
     private String firstName;
@@ -22,19 +22,19 @@ public class Member {
     }
 
     public Member(String email, String password, String firstName, String lastName) {
-        this.mid = UUID.randomUUID().toString().replaceAll("-", "");
+        this.id = UUID.randomUUID().toString().replaceAll("-", "");
         this.email = email;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public String getMid() {
-        return mid;
+    public String getId() {
+        return id;
     }
 
-    public void setMid(String mid) {
-        this.mid = mid;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getEmail() {

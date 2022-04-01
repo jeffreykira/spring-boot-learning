@@ -10,18 +10,18 @@ public class ExamInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long vendorId;
+    private Long id;
     private String name;
 
     public ExamInfo() {
     }
 
-    public Long getVendorId() {
-        return vendorId;
+    public Long getId() {
+        return id;
     }
 
-    public void setVendorId(Long vendorId) {
-        this.vendorId = vendorId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
